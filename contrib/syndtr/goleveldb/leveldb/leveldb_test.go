@@ -10,14 +10,14 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stroem/dd-trace-go/ddtrace/ext"
+	"github.com/stroem/dd-trace-go/ddtrace/mocktracer"
+	"github.com/stroem/dd-trace-go/ddtrace/tracer"
+	"github.com/stroem/dd-trace-go/internal/globalconfig"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 	"github.com/syndtr/goleveldb/leveldb/util"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
 )
 
 func TestDB(t *testing.T) {

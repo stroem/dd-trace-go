@@ -8,15 +8,15 @@ package grpc
 import (
 	"net"
 
+	"github.com/stroem/dd-trace-go/contrib/google.golang.org/internal/grpcutil"
+	"github.com/stroem/dd-trace-go/ddtrace"
+	"github.com/stroem/dd-trace-go/ddtrace/ext"
+	"github.com/stroem/dd-trace-go/ddtrace/tracer"
 	context "golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/peer"
-	"gopkg.in/DataDog/dd-trace-go.v1/contrib/google.golang.org/internal/grpcutil"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 )
 
 type clientStream struct {

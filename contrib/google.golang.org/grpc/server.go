@@ -6,8 +6,8 @@
 package grpc
 
 import (
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/stroem/dd-trace-go/ddtrace"
+	"github.com/stroem/dd-trace-go/ddtrace/tracer"
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"

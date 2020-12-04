@@ -11,10 +11,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/stroem/dd-trace-go/ddtrace/ext"
+	"github.com/stroem/dd-trace-go/ddtrace/mocktracer"
+	"github.com/stroem/dd-trace-go/ddtrace/tracer"
+	"github.com/stroem/dd-trace-go/internal/globalconfig"
 )
 
 func TestHttpTracer200(t *testing.T) {
